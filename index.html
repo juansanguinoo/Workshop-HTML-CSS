@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/fab41580b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+      :root {
+        --title: "Volkhov", serif;
+        --body: "Poppins", sans-serif;
+        --small-size: 0.8rem;
+        --medium-size: 1rem;
+        --large-size: 3rem;
+        --primary-color: #fa7436;
+        --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        --background-color-1: #fefcfb;
+        --background-color-2: #f7f8fc;
+      }
+
+      a[class^="nav-link"] {
+        font-family: var(--body);
+        font-size: var(--small-size);
+        font-weight: bold;
+      }
+
+      .button-signup:hover {
+        background-color: #fd8d3a !important;
+      }
+
+      .button-discover:hover {
+        background-color: var(--primary-color) !important;
+        color: #ffff !important;
+      }
+
+      .button-explore:hover {
+        background-color: #fd8d3a !important;
+      }
+
+      .button-subscribe:hover {
+        background-color: #fd8d3a !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="hero" style="background-color: var(--background-color-1)">
+        <div class="container">
+          <header
+            class="d-flex flex-wrap align-items-center justify-content-center py-4 mb-4"
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+              style="font-family: var(--title); font-size: 1.2rem"
+              >Trabook
+              <img
+                src="./assets/logo.png"
+                alt="logo"
+                style="width: var(--small-size); height: var(--small-size)"
+                class="ms-2"
+              />
+            </a>
+
+            <ul
+              class="nav col-12 col-md-auto mb-2 justify-content-around mb-md-0"
+            >
+              <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+              <li>
+                <a href="#" class="nav-link px-2 link-dark">Destination</a>
+              </li>
+              <li><a href="#" class="nav-link px-2 link-dark">Tour</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">Blog</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+              <button
+                type="button"
+                class="button-login btn btn-primary me-2"
+                style="
+                  width: 8rem;
+                  height: 3rem;
+                  border: none;
+                  color: var(--primary-color);
+                  background-color: transparent;
+                  font-family: var(--body);
+                  font-size: var(--small-size);
+                "
+              >
+                Login
+              </button>
+              <button
+                type="button"
+                class="button-signup btn btn-primary"
+                style="
+                  width: 8rem;
+                  height: 3rem;
+                  background-color: var(--primary-color);
+                  border: none;
+                  font-family: var(--body);
+                  font-size: var(--small-size);
+                "
+              >
+                Sign-up
+              </button>
+            </div>
+          </header>
+        </div>
+
+        <div class="container col-xxl-8 px-4 py-2">
+          <div
+            class="row flex-lg-row-reverse align-items-center py-3 d-flex justify-content-center"
+          >
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img
+                src="./assets/hero-img.png"
+                class="d-block mx-auto img-fluid"
+                alt="hero image"
+                style="width: 70%; height: 100%"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h1
+                class="display-5 fw-bold lh-1 mb-3"
+                style="font-family: var(--title); font-size: var(--large-size)"
+              >
+                Get started your exciting
+                <span style="color: var(--primary-color)">journey</span> with
+                us.
+              </h1>
+              <p
+                class="lead"
+                style="
+                  font-size: var(--medium-size);
+                  font-family: var(--body);
+                  line-height: 2;
+                "
+              >
+                A Team of experienced tourism professionals will provide you
+                with the best advice and tips for your desire place.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button
+                  type="button"
+                  class="button-discover btn btn-primary mt-2"
+                  style="
+                    width: 8rem;
+                    height: 3rem;
+                    background-color: transparent;
+                    border: 1px solid var(--primary-color);
+                    color: var(--primary-color);
+                    font-family: var(--body);
+                    font-size: var(--small-size);
+                  "
+                >
+                  Discover Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="row mb-3 text-center d-flex justify-content-center align-items-center mt-5 p-3"
+              style="
+                background-color: #ffff;
+                box-shadow: var(--box-shadow);
+                border-radius: var(--small-size);
+              "
+            >
+              <div class="col-md-3 themed-grid-col mt-2">
+                <div
+                  style="
+                    font-size: var(--small-size);
+                    font-family: var(--body);
+                    font-weight: bold;
+                    cursor: pointer;
+                  "
+                >
+                  Location
+                  <img src="./assets/Vector 4855.png" />
+                </div>
+                <div
+                  class="mt-1"
+                  style="
+                    font-size: var(--small-size);
+                    font-family: var(--body);
+                    font-weight: 100;
+                  "
+                >
+                  Where are you going?
+                </div>
+              </div>
+              <div class="col-md-3 themed-grid-col mt-2">
+                <div
+                  style="
+                    font-size: var(--small-size);
+                    font-family: var(--body);
+                    font-weight: bold;
+                    cursor: pointer;
+                  "
+                >
+                  Date
+                  <img src="./assets/Vector 4855.png" />
+                </div>
+                <div
+                  class="mt-1"
+                  style="
+                    font-size: var(--small-size);
+                    font-family: var(--body);
+                    font-weight: 100;
+                  "
+                >
+                  When you will go?
+                </div>
+              </div>
+              <div class="col-md-3 themed-grid-col mt-2">
+                <div
+                  style="
+                    font-size: var(--small-size);
+                    font-family: var(--body);
+                    font-weight: bold;
+                    cursor: pointer;
+                  "
+                >
+                  Guest
+                  <img src="./assets/Vector 4855.png" />
+                </div>
+                <div
+                  class="mt-1"
+                  style="
+                    font-size: var(--small-size);
+                    font-family: var(--body);
+                    font-weight: 100;
+                  "
+                >
+                  Number of guest
+                </div>
+              </div>
+              <div class="col-md-3 themed-grid-col mt-2">
+                <button
+                  type="button"
+                  class="button-explore btn btn-primary"
+                  style="
+                    width: 8rem;
+                    height: 3rem;
+                    background-color: var(--primary-color);
+                    border: none;
+                    font-family: var(--body);
+                    font-size: var(--small-size);
+                  "
+                >
+                  Explore Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-us" style="background-color: var(--background-color-2)">
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1
+                class="fw-light"
+                style="font-family: var(--title); font-size: var(--large-size)"
+              >
+                Things you need
+                <span style="color: var(--primary-color)">to do</span>
+              </h1>
+              <p
+                class="lead text-muted"
+                style="font-family: var(--body); font-size: var(--medium-size)"
+              >
+                We ensure that you’ll embark on a perfectly planned, safe
+                vacation at a price you can afford.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="album pb-5">
+          <div
+            class="container d-flex justify-content-center align-items-center"
+          >
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+              <div class="col mt-2">
+                <div
+                  class="card shadow-sm p-4"
+                  style="
+                    width: 20rem;
+                    border: none;
+                    box-shadow: var(--box-shadow) !important;
+                    cursor: pointer;
+                  "
+                >
+                  <img
+                    src="./assets/item-1.png"
+                    alt="emoji"
+                    style="width: 2rem; height: 2rem"
+                    class="card-img-top m-3"
+                  />
+                  <div class="card-body mt-2">
+                    <h6
+                      class="card-title"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--medium-size);
+                        font-weight: bold;
+                      "
+                    >
+                      Sign Up
+                    </h6>
+                    <p
+                      class="card-text mt-4"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                      "
+                    >
+                      Completes all the work associated with planning and
+                      processing
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-2">
+                <div
+                  class="card shadow-sm p-4"
+                  style="
+                    width: 20rem;
+                    border: none;
+                    box-shadow: var(--box-shadow) !important;
+                    cursor: pointer;
+                  "
+                >
+                  <img
+                    src="./assets/item-2.png"
+                    alt="emoji"
+                    style="width: 2rem; height: 2rem"
+                    class="card-img-top m-3"
+                  />
+                  <div class="card-body mt-2">
+                    <h6
+                      class="card-title"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--medium-size);
+                        font-weight: bold;
+                      "
+                    >
+                      Worth of Money
+                    </h6>
+                    <p
+                      class="card-text mt-4"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                      "
+                    >
+                      After successful access then book from exclusive deals &
+                      pricing
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-2">
+                <div
+                  class="card shadow-sm p-4"
+                  style="
+                    width: 20rem;
+                    border: none;
+                    box-shadow: var(--box-shadow) !important;
+                    cursor: pointer;
+                  "
+                >
+                  <img
+                    src="./assets/item-3.png"
+                    alt="emoji"
+                    style="width: 2rem; height: 2rem"
+                    class="card-img-top m-3"
+                  />
+                  <div class="card-body mt-2">
+                    <h6
+                      class="card-title"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--medium-size);
+                        font-weight: bold;
+                      "
+                    >
+                      Exciting Travel
+                    </h6>
+                    <p
+                      class="card-text mt-4"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                      "
+                    >
+                      Start and explore a wide range of exciting travel
+                      experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="places" style="background-color: var(--background-color-1)">
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1
+                class="fw-light"
+                style="font-family: var(--title); font-size: var(--large-size)"
+              >
+                Exclusive
+                <span style="color: var(--primary-color)"
+                  >deal & discounts</span
+                >
+              </h1>
+              <p
+                class="lead text-muted"
+                style="font-family: var(--body); font-size: var(--medium-size)"
+              >
+                Discover our fantastic early booking discounts & start planning
+                your journey.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="album py-1 pb-5">
+          <div
+            class="container d-flex justify-content-center align-items-center"
+          >
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+              <div
+                class="card p-0 m-3"
+                style="
+                  width: 14rem;
+                  box-shadow: var(--box-shadow);
+                  border: none;
+                  cursor: pointer;
+                "
+              >
+                <img
+                  src="./assets/madrid-spain.png"
+                  class="card-img-top"
+                  alt="places to visit"
+                />
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h5
+                      class="card-title"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                        font-weight: bold;
+                      "
+                    >
+                      Madrid
+                    </h5>
+                    <p
+                      class="card-text d-flex align-items-center"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                      "
+                    >
+                      <img
+                        class="me-2"
+                        src="./assets/Vector-1.png"
+                        alt="emoji"
+                        style="width: var(--small-size); height: 1rem"
+                      />
+                      Spain
+                    </p>
+                  </div>
+                  <div>
+                    <h5
+                      class="card-text"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                        font-weight: bold;
+                      "
+                    >
+                      ⭐4.8
+                    </h5>
+                    <p
+                      class="card-text d-flex align-items-center ms-2"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                        color: var(--primary-color);
+                      "
+                    >
+                      $850
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card p-0 m-3"
+                style="
+                  width: 14rem;
+                  box-shadow: var(--box-shadow);
+                  border: none;
+                  cursor: pointer;
+                "
+              >
+                <img
+                  src="./assets/firenze-italy.png"
+                  class="card-img-top"
+                  alt="places to visit"
+                />
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h5
+                      class="card-title"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                        font-weight: bold;
+                      "
+                    >
+                      Firenze
+                    </h5>
+                    <p
+                      class="card-text d-flex align-items-center"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                      "
+                    >
+                      <img
+                        class="me-2"
+                        src="./assets/Vector-1.png"
+                        alt="emoji"
+                        style="width: var(--small-size); height: 1rem"
+                      />
+                      Italy
+                    </p>
+                  </div>
+                  <div>
+                    <h5
+                      class="card-text"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                        font-weight: bold;
+                      "
+                    >
+                      ⭐4.5
+                    </h5>
+                    <p
+                      class="card-text d-flex align-items-center ms-2"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                        color: var(--primary-color);
+                      "
+                    >
+                      $850
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card p-0 m-3"
+                style="
+                  width: 14rem;
+                  box-shadow: var(--box-shadow);
+                  border: none;
+                  cursor: pointer;
+                "
+              >
+                <img
+                  src="./assets/paris-france.png"
+                  class="card-img-top"
+                  alt="places to visit"
+                />
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h5
+                      class="card-title"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                        font-weight: bold;
+                      "
+                    >
+                      Paris
+                    </h5>
+                    <p
+                      class="card-text d-flex align-items-center"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                      "
+                    >
+                      <img
+                        class="me-2"
+                        src="./assets/Vector-1.png"
+                        alt="emoji"
+                        style="width: var(--small-size); height: 1rem"
+                      />
+                      France
+                    </p>
+                  </div>
+                  <div>
+                    <h5
+                      class="card-text"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                        font-weight: bold;
+                      "
+                    >
+                      ⭐4.4
+                    </h5>
+                    <p
+                      class="card-text d-flex align-items-center ms-2"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                        color: var(--primary-color);
+                      "
+                    >
+                      $599
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card p-0 m-3"
+                style="
+                  width: 14rem;
+                  box-shadow: var(--box-shadow);
+                  border: none;
+                  cursor: pointer;
+                "
+              >
+                <img
+                  src="./assets/london-england.png"
+                  class="card-img-top"
+                  alt="places to visit"
+                />
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h5
+                      class="card-title"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                        font-weight: bold;
+                      "
+                    >
+                      London
+                    </h5>
+                    <p
+                      class="card-text d-flex align-items-center"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                      "
+                    >
+                      <img
+                        class="me-2"
+                        src="./assets/Vector-1.png"
+                        alt="emoji"
+                        style="width: var(--small-size); height: 1rem"
+                      />
+                      England
+                    </p>
+                  </div>
+                  <div>
+                    <h5
+                      class="card-text"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                        font-weight: bold;
+                      "
+                    >
+                      ⭐4.8
+                    </h5>
+                    <p
+                      class="card-text d-flex align-items-center ms-2"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                        color: var(--primary-color);
+                      "
+                    >
+                      $850
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="planes" style="background-color: var(--background-color-1)">
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1
+                class="fw-light"
+                style="font-family: var(--title); font-size: var(--large-size)"
+              >
+                Best
+                <span style="color: var(--primary-color)">vacation plan</span>
+              </h1>
+              <p
+                class="lead text-muted"
+                style="font-family: var(--body); font-size: var(--medium-size)"
+              >
+                Plan your perfect vacation with our travel agency. Choose among
+                hundreds of all-inclusive offers!
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="album py-1 pb-5">
+          <div
+            class="container d-flex justify-content-center align-items-center"
+          >
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+              <div
+                class="card p-0 m-3"
+                style="
+                  width: 20rem;
+                  box-shadow: var(--box-shadow);
+                  border: none;
+                  cursor: pointer;
+                "
+              >
+                <img
+                  src="./assets/london-uk.png"
+                  class="card-img-top"
+                  alt="places to visit"
+                />
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h5
+                      class="card-title"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--medium-size);
+                        font-weight: bold;
+                      "
+                    >
+                      Rome, Italy
+                    </h5>
+                    <p
+                      class="card-text"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                      "
+                    >
+                      <img
+                        class="me-2"
+                        src="./assets/arrow-up.png"
+                        alt="emoji"
+                        style="width: 1rem; height: 1rem"
+                      />
+                      10 Days Trip
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      class="card-text"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--medium-size);
+                        font-weight: bold;
+                        color: var(--primary-color);
+                      "
+                    >
+                      $5,42k
+                    </p>
+                    <h5
+                      class="card-text"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                      "
+                    >
+                      ⭐4.8
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card p-0 m-3"
+                style="
+                  width: 20rem;
+                  box-shadow: var(--box-shadow);
+                  border: none;
+                  cursor: pointer;
+                "
+              >
+                <img
+                  src="./assets/london-uk.png"
+                  class="card-img-top"
+                  alt="places to visit"
+                />
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h5
+                      class="card-title"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--medium-size);
+                        font-weight: bold;
+                      "
+                    >
+                      London, UK
+                    </h5>
+                    <p
+                      class="card-text"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                      "
+                    >
+                      <img
+                        class="me-2"
+                        src="./assets/arrow-up.png"
+                        alt="emoji"
+                        style="width: 1rem; height: 1rem"
+                      />
+                      10 Days Trip
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      class="card-text"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--medium-size);
+                        font-weight: bold;
+                        color: var(--primary-color);
+                      "
+                    >
+                      $2,42k
+                    </p>
+                    <h5
+                      class="card-text"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                      "
+                    >
+                      ⭐4.7
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card p-0 m-3"
+                style="
+                  width: 20rem;
+                  box-shadow: var(--box-shadow);
+                  border: none;
+                  cursor: pointer;
+                "
+              >
+                <img
+                  src="./assets/osaka-japon.png"
+                  class="card-img-top"
+                  alt="places to visit"
+                />
+                <div
+                  class="card-body d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <h5
+                      class="card-title"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--medium-size);
+                        font-weight: bold;
+                      "
+                    >
+                      Osaka, Japan
+                    </h5>
+                    <p
+                      class="card-text"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                      "
+                    >
+                      <img
+                        class="me-2"
+                        src="./assets/arrow-up.png"
+                        alt="emoji"
+                        style="width: 1rem; height: 1rem"
+                      />
+                      10 Days Trip
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      class="card-text"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--medium-size);
+                        font-weight: bold;
+                        color: var(--primary-color);
+                      "
+                    >
+                      $2,42k
+                    </p>
+                    <h5
+                      class="card-text"
+                      style="
+                        font-family: var(--body);
+                        font-size: var(--small-size);
+                      "
+                    >
+                      ⭐4.8
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="comments p-3"
+        style="background-color: var(--background-color-2)"
+      >
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <div
+                class="card ms-5 p-3"
+                style="
+                  width: 28rem;
+                  border: none;
+                  box-shadow: var(--box-shadow);
+                "
+              >
+                <div class="card-body">
+                  <h5
+                    class="card-title"
+                    style="
+                      font-family: var(--body);
+                      font-size: 1.2rem;
+                      font-weight: bold;
+                    "
+                  >
+                    Mike Taylor
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Lahore, Pakistan
+                  </h6>
+                  <p
+                    class="card-text mt-3"
+                    style="
+                      font-family: var(--body);
+                      font-size: var(--small-size);
+                      line-height: 2;
+                      color: #444444;
+                      font-weight: bold;
+                    "
+                  >
+                    “On the Windows talking painted pasture yet its express
+                    parties use. Sure last upon he same as knew next. Of
+                    believed or diverted no.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h1
+                class="display-5 fw-bold lh-1 mb-3"
+                style="font-family: var(--title); font-size: var(--large-size)"
+              >
+                What people say
+                <span style="color: var(--primary-color)">about us.</span>
+              </h1>
+              <p
+                class="lead"
+                style="
+                  font-family: var(--body);
+                  font-size: var(--medium-size);
+                  color: #444444;
+                "
+              >
+                Our Clients send us bunch of smilies with our services and we
+                love them.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button
+                  type="button"
+                  class="button-back btn btn-primary p-3 d-flex align-items-center"
+                  style="
+                    border-radius: 50%;
+                    background-color: #ffff;
+                    border: 1px solid #cbcbcb;
+                  "
+                >
+                  <img src="./assets/arrow-left.png" alt="arrow" />
+                </button>
+                <button
+                  type="button"
+                  class="button-forward btn btn-primary p-3 d-flex align-items-center"
+                  style="
+                    border-radius: 50%;
+                    background-color: var(--primary-color);
+                    border: none;
+                  "
+                >
+                  <img src="./assets/arrow-rigth.png" alt="arrow" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog" style="background-color: var(--background-color-1)">
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1
+                class="fw-light"
+                style="font-family: var(--title); font-size: var(--large-size)"
+              >
+                Get update with
+                <span style="color: var(--primary-color)">latest blog</span>
+              </h1>
+            </div>
+          </div>
+        </section>
+        <div class="album py-1 pb-5">
+          <div
+            class="container d-flex justify-content-center align-items-center"
+          >
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+              <div
+                class="card p-0 m-3"
+                style="
+                  width: 14rem;
+                  border: none;
+                  background-color: transparent;
+                  cursor: pointer;
+                "
+              >
+                <img
+                  src="./assets/latest-blog-1.png"
+                  class="card-img-top"
+                  alt="places to visit"
+                />
+                <div class="card-body p-0">
+                  <h5
+                    class="card-title mt-3"
+                    style="
+                      font-family: var(--body);
+                      font-size: var(--small-size);
+                      font-weight: bold;
+                    "
+                  >
+                    The Amazing Difference a Year of Travelling.
+                  </h5>
+                  <p
+                    class="card-text mt-3"
+                    style="
+                      font-family: var(--body);
+                      font-size: var(--small-size);
+                    "
+                  >
+                    July 27, 2021
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card p-0 m-3"
+                style="
+                  width: 14rem;
+                  border: none;
+                  background-color: transparent;
+                  cursor: pointer;
+                "
+              >
+                <img
+                  src="./assets/latest-blog-2.png"
+                  class="card-img-top"
+                  alt="places to visit"
+                />
+                <div class="card-body p-0">
+                  <h5
+                    class="card-title mt-3"
+                    style="
+                      font-family: var(--body);
+                      font-size: var(--small-size);
+                      font-weight: bold;
+                    "
+                  >
+                    Travel far enough, you meet yourself.
+                  </h5>
+                  <p
+                    class="card-text mt-3"
+                    style="
+                      font-family: var(--body);
+                      font-size: var(--small-size);
+                    "
+                  >
+                    July 27, 2021
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card p-0 m-3"
+                style="
+                  width: 14rem;
+                  border: none;
+                  background-color: transparent;
+                  cursor: pointer;
+                "
+              >
+                <img
+                  src="./assets/latest-blog-3.png"
+                  class="card-img-top"
+                  alt="places to visit"
+                />
+                <div class="card-body p-0">
+                  <h5
+                    class="card-title mt-3"
+                    style="
+                      font-family: var(--body);
+                      font-size: var(--small-size);
+                      font-weight: bold;
+                    "
+                  >
+                    How to Save Money While Visiting Africa.
+                  </h5>
+                  <p
+                    class="card-text mt-3"
+                    style="
+                      font-family: var(--body);
+                      font-size: var(--small-size);
+                    "
+                  >
+                    July 27, 2021
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card p-0 m-3"
+                style="
+                  width: 14rem;
+                  border: none;
+                  background-color: transparent;
+                  cursor: pointer;
+                "
+              >
+                <img
+                  src="./assets/latest-blog-4.png"
+                  class="card-img-top"
+                  alt="places to visit"
+                />
+                <div class="card-body p-0">
+                  <h5
+                    class="card-title mt-3"
+                    style="
+                      font-family: var(--body);
+                      font-size: var(--small-size);
+                      font-weight: bold;
+                    "
+                  >
+                    Reflections on 5 Months of Travel: Time to Hang.
+                  </h5>
+                  <p
+                    class="card-text mt-3"
+                    style="
+                      font-family: var(--body);
+                      font-size: var(--small-size);
+                    "
+                  >
+                    July 27, 2021
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer" style="background-color: var(--background-color-2)">
+        <div class="px-4 pt-5 text-center">
+          <div
+            class="col-lg-8 mx-auto d-flex justify-content-center align-items-center flex-column p-4"
+            style="background-color: var(--primary-color); border-radius: 2rem"
+          >
+            <h1
+              class="display-4 fw-bold mt-3"
+              style="
+                width: 35rem;
+                font-family: var(--title);
+                font-size: var(--large-size);
+                color: #ffff;
+              "
+            >
+              Subscribe and get exclusive deals & offer
+            </h1>
+            <div
+              class="row mb-3 text-center d-flex justify-content-between align-items-center mt-5 p-2"
+              style="
+                width: 35rem;
+                background-color: #ffff;
+                box-shadow: var(--box-shadow);
+                border-radius: var(--small-size);
+              "
+            >
+              <div class="col themed-grid-col mt-2 text-start">
+                <div
+                  style="
+                    font-size: var(--small-size);
+                    font-family: 0.5rem;
+                    color: #999;
+                  "
+                >
+                  <img
+                    class="me-2"
+                    src="./assets/email.png"
+                    alt="mail"
+                    style="width: 1.2rem; height: 1.2rem"
+                  />
+                  Enter your email
+                </div>
+              </div>
+              <div class="col themed-grid-col mt-2 text-end">
+                <button
+                  type="button"
+                  class="button-subscribe btn btn-primary"
+                  style="
+                    width: 8rem;
+                    height: 3rem;
+                    background-color: var(--primary-color);
+                    border: none;
+                    font-family: var(--body);
+                    font-size: var(--small-size);
+                  "
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container col-xxl-8">
+          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
+            <div class="col mb-3 pe-1">
+              <a
+                href="/#"
+                class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+                style="font-family: var(--title); font-size: 1.2rem"
+                >Trabook
+                <img
+                  src="./assets/logo.png"
+                  alt="logo"
+                  style="width: var(--small-size); height: var(--small-size)"
+                  class="ms-2"
+                />
+              </a>
+              <p
+                class="lead text-muted"
+                style="
+                  font-family: var(--body);
+                  font-size: var(--small-size);
+                  font-weight: bold;
+                  color: #444444;
+                "
+              >
+                Book your trip in minute, get full Control for much longer.
+              </p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3">
+                  <a class="link-dark" href="">
+                    <i class="fa-brands fa-facebook" style="color: #444444"></i>
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-dark" href="">
+                    <i
+                      class="fa-brands fa-instagram"
+                      style="color: var(--primary-color)"
+                    ></i>
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-dark" href="">
+                    <i class="fa-brands fa-twitter" style="color: #444444"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col mb-3"></div>
+
+            <div class="col mb-3">
+              <h5>Company</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">About</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Careers</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Logistic</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted"
+                    >Privacy & Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col mb-3">
+              <h5>Contact</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Help/FAQ</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Press</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Affiliates</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col mb-3">
+              <h5>More</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Press Centre</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Our Blog</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Low fare tips</a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
